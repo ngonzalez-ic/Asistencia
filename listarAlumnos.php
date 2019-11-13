@@ -130,8 +130,7 @@ include "home.html";
                         </div>
                      </div>
                      <div class="form-group row">
-                        <label class="col-lg-3 col-form-label form-control-label">Last
-                           name</label>
+                        <label class="col-lg-3 col-form-label form-control-label">Last name</label>
                         <div class="col-lg-9">
                            <input class="form-control" type="text" >
                         </div>
@@ -148,6 +147,7 @@ include "home.html";
                            <input class="form-control" type="text">
                         </div>
                      </div>
+
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Password</label>
                         <div class="col-lg-9">
@@ -160,6 +160,74 @@ include "home.html";
                            <input class="form-control" type="password" >
                         </div>
                      </div>
+
+
+                     
+                     <div class="form-group row">
+                     <label class="col-lg-3 col-form-label form-control-label">Tipo de documento</label>
+                        <select class="col-lg-9" >
+                           <option class="form-control" type="text">DNI</option>
+                           <option class="form-control" type="text">DU</option>
+                           <option class="form-control" type="text">Libreta Civica</option>
+                           <option class="form-control" type="text">Pasaporte</option>
+                        </select>
+                     </div>
+                     
+                     <div class="form-group row">
+                     <label class="col-lg-3 col-form-label form-control-label">Nacionalidad</label>
+                        <select class="col-lg-9" >
+                           <option class="form-control" type="text">Argentina</option>
+                           <option class="form-control" type="text">Uruguay</option>
+                           <option class="form-control" type="text">Paraguay</option>
+                           <option class="form-control" type="text">Chile</option>
+                           <option class="form-control" type="text">Brasil</option>
+                           <option class="form-control" type="text">Peru</option>
+                           <option class="form-control" type="text">Bolibia</option>
+                           <option class="form-control" type="text">Venezuel</option>
+                           <option class="form-control" type="text">Colombia</option>
+                        </select>
+                     </div>
+                 
+                     <div class="form-group row">
+                        <label class="col-lg-3 col-form-label form-control-label">Numero de Documento</label>
+                        <div class="col-lg-9">
+                           <input class="form-control" type="number">
+                        </div>
+                     
+                     </div>
+                     <div class="form-group row">
+                        <label class="col-lg-3 col-form-label form-control-label">Domicilio</label>
+                        <div class="col-lg-9">
+                           <input class="form-control" type="text" >
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label class="col-lg-3 col-form-label form-control-label">Localidad</label>
+                        <div class="col-lg-9">
+                           <input class="form-control" type="text" >
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label class="col-lg-3 col-form-label form-control-label">Codigo Postal</label>
+                        <div class="col-lg-9">
+                           <input class="form-control" type="number">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label class="col-lg-3 col-form-label form-control-label">Telefono</label>
+                        <div class="col-lg-9">
+                           <input class="form-control" type="number">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label class="col-lg-3 col-form-label form-control-label">Constancia de titulo</label>
+                        <div class="col-lg-9">
+                           <input class="form-control"type="checkbox" value="true">
+                        </div>
+                     </div>
+                     
+
+
                      <div class="form-group row">
                         <div class="col-lg-12 text-center">
                            <input type="reset" class="btn btn-secondary" value="Cancel">

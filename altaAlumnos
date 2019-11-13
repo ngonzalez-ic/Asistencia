@@ -1,9 +1,0 @@
-
-   
-$chat=fopen("mensaje.txt", "r");
-while(!feof($chat))
-{
-  $renglon = fgets($chat);
-  echo $renglon."<br>";
-}
-?>

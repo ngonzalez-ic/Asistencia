@@ -28,7 +28,7 @@ while(!feof($archivo))
    }
      echo '<script language="javascript">alert("Validar los datos ingresador");</script>'; 
 
-     echo '<a class="txt1" href="\php\login2.php">Click aqui para volver a intentar</a>';
+     echo '<a class="txt1" href="\php\login2.html">Click aqui para volver a intentar</a>';
 
 fclose($archivo);
 

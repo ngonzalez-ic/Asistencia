@@ -122,107 +122,109 @@ include "home.html";
                   <h4>User Information</h4>
                </div>
                <div class="card-body">
-                  <form class="form" role="form" autocomplete="off">
+                  <form class="form" role="form" action="alta.php" method="post"autocomplete="off">
                      <div class="form-group row">
-                        <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                        <label class="col-lg-3 col-form-label form-control-label">Nombre</label>
                         <div class="col-lg-9">
-                           <input class="form-control" type="text" >
+                           <input class="form-control" name="nombre"type="text" >
                         </div>
                      </div>
                      <div class="form-group row">
-                        <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                        <label class="col-lg-3 col-form-label form-control-label">Apellido</label>
                         <div class="col-lg-9">
-                           <input class="form-control" type="text" >
+                           <input class="form-control" name ="apellido"type="text" >
                         </div>
                      </div>
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Email</label>
                         <div class="col-lg-9">
-                           <input class="form-control" type="email">
+                           <input class="form-control" name="correo"type="email">
                         </div>
                      </div>
                      <div class="form-group row">
-                        <label class="col-lg-3 col-form-label form-control-label">Username</label>
+                        <label class="col-lg-3 col-form-label form-control-label">Ususario</label>
                         <div class="col-lg-9">
-                           <input class="form-control" type="text">
+                           <input class="form-control" name="usuario"type="text">
                         </div>
                      </div>
 
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Password</label>
                         <div class="col-lg-9">
-                           <input class="form-control" type="password">
+                           <input class="form-control" name="clave1" type="password">
                         </div>
                      </div>
                      <div class="form-group row">
-                        <label class="col-lg-3 col-form-label form-control-label">Confirm</label>
+                        <label class="col-lg-3 col-form-label form-control-label">Confirmacion</label>
                         <div class="col-lg-9">
-                           <input class="form-control" type="password" >
+                           <input class="form-control"name="clave2" type="password" >
                         </div>
                      </div>
 
-
+                     <div class="form-group row">
+                     <label class="col-lg-3 col-form-label form-control-label">Nacionalidad</label>
+                        <select class="col-lg-9" >
+                           <option class="form-control"  name="Argentina" type="text">Argentina</option>
+                           <option class="form-control"  name="Uruguay"  type="text">Uruguay</option>
+                           <option class="form-control"  name="Paraguay" type="text">Paraguay</option>
+                           <option class="form-control"  name="Chile" type="text">Chile</option>
+                           <option class="form-control"  name="Chile" type="text">Chile</option>
+                           <option class="form-control"  name="Brasil" type="text">Brasil</option>
+                           <option class="form-control"  name="Peru" type="text">Peru</option>
+                           <option class="form-control"  name="Bolibia" type="text">Bolibia</option>
+                           <option class="form-control"  name="Venezuel" type="text">Venezuel</option>
+                           <option class="form-control"  name="Colombia" type="text">Colombia</option>
+                        </select>
+                     </div>
+                     
                      
                      <div class="form-group row">
                      <label class="col-lg-3 col-form-label form-control-label">Tipo de documento</label>
                         <select class="col-lg-9" >
-                           <option class="form-control" type="text">DNI</option>
-                           <option class="form-control" type="text">DU</option>
-                           <option class="form-control" type="text">Libreta Civica</option>
-                           <option class="form-control" type="text">Pasaporte</option>
+                           <option class="form-control"  name="dni" type="text">DNI</option>
+                           <option class="form-control"  name="du" type="text">DU</option>
+                           <option class="form-control"  name="libreta" type="text">Libreta Civica</option>
+                           <option class="form-control"  name="pasaporte" type="text">Pasaporte</option>
                         </select>
                      </div>
                      
-                     <div class="form-group row">
-                     <label class="col-lg-3 col-form-label form-control-label">Nacionalidad</label>
-                        <select class="col-lg-9" >
-                           <option class="form-control" type="text">Argentina</option>
-                           <option class="form-control" type="text">Uruguay</option>
-                           <option class="form-control" type="text">Paraguay</option>
-                           <option class="form-control" type="text">Chile</option>
-                           <option class="form-control" type="text">Brasil</option>
-                           <option class="form-control" type="text">Peru</option>
-                           <option class="form-control" type="text">Bolibia</option>
-                           <option class="form-control" type="text">Venezuel</option>
-                           <option class="form-control" type="text">Colombia</option>
-                        </select>
-                     </div>
+
                  
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Numero de Documento</label>
                         <div class="col-lg-9">
-                           <input class="form-control" type="number">
+                           <input class="form-control"  name="num_doc" type="number">
                         </div>
                      
                      </div>
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Domicilio</label>
                         <div class="col-lg-9">
-                           <input class="form-control" type="text" >
+                           <input class="form-control"  name="domicilio" type="text" >
                         </div>
                      </div>
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Localidad</label>
                         <div class="col-lg-9">
-                           <input class="form-control" type="text" >
+                           <input class="form-control"  name="localidad" type="text" >
                         </div>
                      </div>
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Codigo Postal</label>
                         <div class="col-lg-9">
-                           <input class="form-control" type="number">
+                           <input class="form-control"  name="codigo postal" type="number">
                         </div>
                      </div>
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Telefono</label>
                         <div class="col-lg-9">
-                           <input class="form-control" type="number">
+                           <input class="form-control"  name="telefono" type="number">
                         </div>
                      </div>
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Constancia de titulo</label>
                         <div class="col-lg-9">
-                           <input class="form-control"type="checkbox" value="true">
+                           <input class="form-control" name="" type="checkbox" value="true">
                         </div>
                      </div>
                      

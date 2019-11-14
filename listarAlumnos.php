@@ -126,7 +126,7 @@ include "home.html";
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Nombre</label>
                         <div class="col-lg-9">
-                           <input class="form-control" name="nombre"type="text" >
+                           <input class="form-control" name="nombre" type="text" >
                         </div>
                      </div>
                      <div class="form-group row">
@@ -154,26 +154,20 @@ include "home.html";
                            <input class="form-control" name="clave1" type="password">
                         </div>
                      </div>
-                     <div class="form-group row">
-                        <label class="col-lg-3 col-form-label form-control-label">Confirmacion</label>
-                        <div class="col-lg-9">
-                           <input class="form-control"name="clave2" type="password" >
-                        </div>
-                     </div>
-
+                     
                      <div class="form-group row">
                      <label class="col-lg-3 col-form-label form-control-label">Nacionalidad</label>
                         <select class="col-lg-9" >
-                           <option class="form-control"  name="Argentina" type="text">Argentina</option>
-                           <option class="form-control"  name="Uruguay"  type="text">Uruguay</option>
-                           <option class="form-control"  name="Paraguay" type="text">Paraguay</option>
-                           <option class="form-control"  name="Chile" type="text">Chile</option>
-                           <option class="form-control"  name="Chile" type="text">Chile</option>
-                           <option class="form-control"  name="Brasil" type="text">Brasil</option>
-                           <option class="form-control"  name="Peru" type="text">Peru</option>
-                           <option class="form-control"  name="Bolibia" type="text">Bolibia</option>
-                           <option class="form-control"  name="Venezuel" type="text">Venezuel</option>
-                           <option class="form-control"  name="Colombia" type="text">Colombia</option>
+                           <option class="form-control"  name="pais" type="text">Argentina</option>
+                           <option class="form-control"  name="pais"  type="text">Uruguay</option>
+                           <option class="form-control"  name="pais" type="text">Paraguay</option>
+                           <option class="form-control"  name="pais" type="text">Chile</option>
+                           <option class="form-control"  name="pais" type="text">Chile</option>
+                           <option class="form-control"  name="pais" type="text">Brasil</option>
+                           <option class="form-control"  name="pais" type="text">Peru</option>
+                           <option class="form-control"  name="pais" type="text">Bolibia</option>
+                           <option class="form-control"  name="pais" type="text">Venezuel</option>
+                           <option class="form-control"  name="pais" type="text">Colombia</option>
                         </select>
                      </div>
                      
@@ -181,10 +175,10 @@ include "home.html";
                      <div class="form-group row">
                      <label class="col-lg-3 col-form-label form-control-label">Tipo de documento</label>
                         <select class="col-lg-9" >
-                           <option class="form-control"  name="dni" type="text">DNI</option>
-                           <option class="form-control"  name="du" type="text">DU</option>
-                           <option class="form-control"  name="libreta" type="text">Libreta Civica</option>
-                           <option class="form-control"  name="pasaporte" type="text">Pasaporte</option>
+                           <option class="form-control"  name="t_doc" type="text">DNI</option>
+                           <option class="form-control"  name="t_doc" type="text">DU</option>
+                           <option class="form-control"  name="t_doc" type="text">Libreta Civica</option>
+                           <option class="form-control"  name="t_doc" type="text">Pasaporte</option>
                         </select>
                      </div>
                      
@@ -212,7 +206,7 @@ include "home.html";
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Codigo Postal</label>
                         <div class="col-lg-9">
-                           <input class="form-control"  name="codigo postal" type="number">
+                           <input class="form-control"  name="cp" type="number">
                         </div>
                      </div>
                      <div class="form-group row">
@@ -224,7 +218,7 @@ include "home.html";
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Constancia de titulo</label>
                         <div class="col-lg-9">
-                           <input class="form-control" name="" type="checkbox" value="true">
+                           <input class="form-control" name="c_titulo" type="checkbox" value="true">
                         </div>
                      </div>
                      
@@ -233,7 +227,8 @@ include "home.html";
                      <div class="form-group row">
                         <div class="col-lg-12 text-center">
                            <input type="reset" class="btn btn-secondary" value="Cancel">
-                           <input type="button" class="btn btn-primary"
+                           
+                           <button class="btn btn-primary" type="submit">inviar</button>
                               value="Save Changes">
                         </div>
                      </div>

@@ -1,16 +1,33 @@
+<html>
+<head>
+<meta charset="utf-8">
+
+
 <?php
 
+$nombre=$_POST['nombre'];
+$apellido=$_POST['apellido'];
+$correo=$_POST['correo'];
+$usuario=$_POST['usuario'];
+$clave1=$_POST['clave1'];
+$pais=$_POST['pais'];
+$t_doc=$_POST['t_doc'];
+$num_doc=$_POST['num_doc'];
+$domicilio=$_POST['domicilio'];
+$localidad=$_POST['localidad'];
+$cp=$_POST['cp'];
+$telefono=$_POST['telefono'];
+$c_titulo=$_POST['c_titulo'];
 
-include "persona.php";
-$nuevaPersona=new Persona();
 
+$contenido="$nombre;$apellido;$correo;$usuario;$clave1;$pais;$t_doc;$num_doc;$domicilio;$localidad;$cp;$telefono;$c_titulo;";
+$archivo=fopen("usuario.txt","a");
+fwrite($archivo,$contenido);
 
-//$nuevaPersona->mostrar($_POST['correo']);
-$nuevaPersona->correo=$_POST['correo']; 
-$nuevaPersona->clave=$_POST['clave'];
-$nuevaPersona->nombre=$_POST['nombre'];
-$nuevaPersona->apellido=$_POST['apellido'];
-$nuevaPersona->guardar();
-
-header("Location:login2.php");
 ?>
+
+</head>
+<body>
+enviado
+</body>
+</html>

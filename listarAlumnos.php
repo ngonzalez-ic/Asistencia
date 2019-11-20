@@ -49,6 +49,20 @@ include "home.html";
          <a class="nav-link" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="true">Form</a>                  
          </li>
       </ul>
+
+          <?php
+    $archivo=fopen("usuarios.txt", "r");
+while(!feof($archivo))
+{
+  $renglon = fgets($archivo);
+
+  $datosArray=explode("=>", $renglon);
+  //$nombre2 = $datosArray[0];
+ echo   $datosArray[0]."<br/>" ;
+}
+
+    fclose($archivo);
+          ?>
       <div class="tab-content" id="myTabContent">
          <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
             <div class="card">
@@ -69,46 +83,21 @@ include "home.html";
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                           <th scope="row">1</th>
-                           <td>Cristian</td>
-                           <td>Ruiz</td>
-                           <td>c.r.username</td>
-                           <td>c.r.username@blog.com</td>
-                           <td>
-                              <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                           </td>
-                        </tr>
-                         <tr>
-                           <th scope="row">1</th>
-                           <td>Cristian</td>
-                           <td>Ruiz</td>
-                           <td>c.r.username</td>
-                           <td>c.r.username@blog.com</td>
-                           <td>
-                              <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                           </td>
-                        </tr>
-                         <tr>
-                           <th scope="row">1</th>
-                           <td>Cristian</td>
-                           <td>Ruiz</td>
-                           <td>c.r.username</td>
-                           <td>c.r.username@blog.com</td>
-                           <td>
-                              <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                           </td>
-                        </tr>
-                         <tr>
-                           <th scope="row">1</th>
-                           <td>Cristian</td>
-                           <td>Ruiz</td>
-                           <td>c.r.username</td>
-                           <td>c.r.username@blog.com</td>
-                           <td>
-                              <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                           </td>
-                        </tr> 
+                       <?php
+        // obtenemos los colores
+              
+    $archivo=fopen("usuarios.txt", "r");
+while(!feof($archivo))
+{
+  $renglon = fgets($archivo);
+
+  $datosArray=explode("=>", $renglon);
+  //$nombre2 = $datosArray[0];
+ echo   $datosArray[0]."<br/>" ;
+}
+
+    fclose($archivo);
+          ?>
                         </tbody>
                      </table>
                   </div>
@@ -154,11 +143,11 @@ include "home.html";
                            <input class="form-control" name="clave1" type="password">
                         </div>
                      </div>
-                     
+
                      <div class="form-group row">
                      <label class="col-lg-3 col-form-label form-control-label">Nacionalidad</label>
-                        <select class="col-lg-9" >
-                           <option class="form-control"  name="pais" type="text">Argentina</option>
+                        <select class="col-lg-9" name="pais" >
+                           <option class="form-control"  value="Argentina"type="text">Argentina</option>
                            <option class="form-control"  name="pais"  type="text">Uruguay</option>
                            <option class="form-control"  name="pais" type="text">Paraguay</option>
                            <option class="form-control"  name="pais" type="text">Chile</option>
@@ -170,26 +159,26 @@ include "home.html";
                            <option class="form-control"  name="pais" type="text">Colombia</option>
                         </select>
                      </div>
-                     
-                     
+
+
                      <div class="form-group row">
                      <label class="col-lg-3 col-form-label form-control-label">Tipo de documento</label>
-                        <select class="col-lg-9" >
-                           <option class="form-control"  name="t_doc" type="text">DNI</option>
+                        <select class="col-lg-9" name="t_doc" >
+                           <option class="form-control"  value="DNI" type="text">DNI</option>
                            <option class="form-control"  name="t_doc" type="text">DU</option>
                            <option class="form-control"  name="t_doc" type="text">Libreta Civica</option>
                            <option class="form-control"  name="t_doc" type="text">Pasaporte</option>
                         </select>
                      </div>
-                     
 
-                 
+
+
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Numero de Documento</label>
                         <div class="col-lg-9">
                            <input class="form-control"  name="num_doc" type="number">
                         </div>
-                     
+
                      </div>
                      <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label">Domicilio</label>
@@ -221,13 +210,13 @@ include "home.html";
                            <input class="form-control" name="c_titulo" type="checkbox" value="true">
                         </div>
                      </div>
-                     
+
 
 
                      <div class="form-group row">
                         <div class="col-lg-12 text-center">
                            <input type="reset" class="btn btn-secondary" value="Cancel">
-                           
+
                            <button class="btn btn-primary" type="submit">inviar</button>
                               value="Save Changes">
                         </div>
@@ -259,3 +248,4 @@ include "home.html";
 </body>
 
 </html>
+

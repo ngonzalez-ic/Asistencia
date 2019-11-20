@@ -1,4 +1,5 @@
-<!doctype html>
+
+
 <html lang="en">
 
 <head>
@@ -38,7 +39,7 @@
                         <label for="inputPassword" >Password</label>
                      </div>
 
-
+                   
                      <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
                      <hr class="my-4">
 
@@ -51,4 +52,4 @@
    </div>
 </body>
 
-</html> 
+</html>

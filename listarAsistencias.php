@@ -96,7 +96,7 @@ include "home.html";
                               <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
                           </td>
                         </tr>
-                       
+
                         </tbody>
                      </table>
                   </div>
@@ -173,13 +173,12 @@ include "home.html";
 
   <!-- Menu Toggle Script -->
   <script>  
-
     $("#menu-toggle").click(function(e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
   </script>
-  
+
 </body>
 
-</html>
+</html> 

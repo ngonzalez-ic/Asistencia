@@ -49,20 +49,6 @@ include "home.html";
          <a class="nav-link" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="true">Form</a>                  
          </li>
       </ul>
-
-          <?php
-    $archivo=fopen("usuarios.txt", "r");
-while(!feof($archivo))
-{
-  $renglon = fgets($archivo);
-
-  $datosArray=explode("=>", $renglon);
-  //$nombre2 = $datosArray[0];
- echo   $datosArray[0]."<br/>" ;
-}
-
-    fclose($archivo);
-          ?>
       <div class="tab-content" id="myTabContent">
          <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
             <div class="card">
@@ -83,21 +69,34 @@ while(!feof($archivo))
                         </tr>
                         </thead>
                         <tbody>
-                       <?php
-        // obtenemos los colores
-              
-    $archivo=fopen("usuarios.txt", "r");
-while(!feof($archivo))
-{
-  $renglon = fgets($archivo);
+        <?php
+            $fp = fopen('usuarios.txt','r');
+            if (!$fp) {echo 'ERROR: No ha sido posible abrir el archivo. Revisa su nombre y sus permisos.'; exit;}
 
-  $datosArray=explode("=>", $renglon);
-  //$nombre2 = $datosArray[0];
- echo   $datosArray[0]."<br/>" ;
-}
+            $loop = 1; // contador de líneas
+            while (!feof($fp)) { // loop hasta que se llegue al final del archivo
+            $loop++;
 
-    fclose($archivo);
-          ?>
+            $line = fgets($fp); // guardamos toda la línea en $line como un string
+            // dividimos $line en sus celdas, separadas por el caracter |
+            // e incorporamos la línea a la matriz $field
+         ;
+            $field[$loop] = explode ('=>', $line);
+
+            // generamos la salida HTML
+            echo '
+             <tr>
+            <th scope="row">'.$loop.'</th>
+            <td>'.$field[$loop][0].'<td>
+            <td>'.$field[$loop][1]. '</td>
+            <td>'.$field[$loop][2] .'</td>
+            <td>'.$field[$loop][3]. '</td>
+            </tr>';
+            $fp++; // necesitamos llevar el puntero del archivo a la siguiente línea
+            }
+        fclose($fp);
+        ?>
+        
                         </tbody>
                      </table>
                   </div>

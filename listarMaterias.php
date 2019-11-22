@@ -21,7 +21,7 @@ include "home.html";
    <link rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-   <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script><link rel="stylesheet"
+   <script type="text/javascript"></script>ript src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script><link rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
@@ -73,7 +73,7 @@ include "home.html";
                            <th scope="row">1</th>
                            <td>Cristian</td>
                            <td>Ruiz</td>
-                           <td>c.r.username</td>
+                           <td>c.<r class="username"></r></td>
                            <td>c.r.username@blog.com</td>
                            <td>
                               <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>

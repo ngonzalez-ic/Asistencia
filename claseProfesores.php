@@ -1,5 +1,5 @@
 <?php
-class Alumno
+class Profesores
 {
 	//atributos
 	public $nombre;
@@ -19,7 +19,7 @@ class Alumno
 
 	function guardar()
 	{
-		$archivo=fopen("usuarios.txt", "a");
+		$archivo=fopen("Profesores.txt", "a");
       		$renglon="\n".$this->nombre."=>".$this->apellido."=>".$this->correo."=>".$this->usuario."=>".$this->clave1."=>".$this->pais."=>".$this->t_doc."=>".$this->num_doc."=>".$this->domicilio."=>".$this->localidad."=>".$this->cp."=>".$this->telefono."=>".$this->c_titulo;
 		fwrite($archivo,$renglon);
 		fclose($archivo);
